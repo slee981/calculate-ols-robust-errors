@@ -10,7 +10,7 @@ randn('seed', 234)
 %----------------------------------------------------------------------------
 % STORAGE
 
-saveFname = 'data/test-data.csv';
+saveFname = 'data/test-data-2.csv';
 n = 20;
 
 %----------------------------------------------------------------------------
@@ -27,12 +27,7 @@ c = ones(n, 1);
 uHomo = randn(n, 1);
 
 % u with heteroskedastic errors 
-uHetero = zeros(n, 1);
-for i = 1:n
-
-    % each error term has different variance 
-    uHetero(i, 1) = randn(1) * i ;
-end
+uHetero = randn(n, 1) .* (1:n)';
 
 %----------------------------------------------------------------------------
 % THE TRUTH 
