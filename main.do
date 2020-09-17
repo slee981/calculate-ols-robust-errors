@@ -3,12 +3,12 @@
 /* setup */
 
 clear
-cd "C:\Users\slee\Desktop\White Errors"
+cd "YOUR_PATH/calculate-ols-robust-errors/"
 log using "stata-results"
 
 /* import */
 
-import delimited using "data/tstData.csv"
+import delimited using "data/test-data.csv"
 
 /* regress the homoskedastic error data */
 
