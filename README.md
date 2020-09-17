@@ -17,7 +17,7 @@ $ octave-cli makeDataset.m
 $ octave-cli main.m
 ```
 
-In stata, run the `main.do` file. 
+If you have STATA, open the `main.do` file, edit the directory location and run. 
 
 ## Calculations
 
